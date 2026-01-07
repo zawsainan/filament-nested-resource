@@ -9,4 +9,9 @@ class Course extends Model
     protected $fillable = [
         'name'
     ];
+
+    public function lessons()
+    {
+        return $this->hasMany(Lesson::class);
+    }
 }

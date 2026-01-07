@@ -11,4 +11,9 @@ class Lesson extends Model
         'title',
         'body'
     ];
+
+    public function course()
+    {
+        return $this->belongsTo(Course::class);
+    }
 }
